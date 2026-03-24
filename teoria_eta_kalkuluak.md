@@ -34,3 +34,5 @@ Emaitza perfektua da HC-05-aren RX pinerako!
 2. Joan Windows-eko Bluetooth ezarpenetara, bilatu **HC-05** eta emparejatu (PIN: `1234` edo `0000`).
 3. Ireki Windows-eko "Administrador de Dispositivos", joan "Puertos (COM y LPT)" atalera eta bilatu Bluetooth-ak sortu dituen **COM portuak** (adibidez COM5 eta COM6).
 4. Ireki **Tera Term**, hautatu konexio seriala eta aukeratu COM portu horietako bat (sarrerakoa) 9600 baud-eko abiaduran.
+<img width="657" height="431" alt="image" src="https://github.com/user-attachments/assets/b0cc79a4-e8ca-46cf-b3f8-7dee1db8d74d" />
+
