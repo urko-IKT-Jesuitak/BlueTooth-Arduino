@@ -1,8 +1,7 @@
 # 📶 Bluetooth HC-05: Haririk Gabeko Kontrola | Jesuitak Indautxu
 
-<p align="center">
-  <img src="https://image.api.playstation.com/vulcan/ap/rnd/202107/0216/9Kk4M0r7o7r2vGj4vGj4M0r7o7r2vGj4vGj4.png?w=1920&h=480" alt="Urkoren IKT Bluetooth Proiektua - Cyberpunk Header" width="100%">
-</p>
+<img width="1376" height="768" alt="image" src="https://github.com/user-attachments/assets/6a723576-3cf8-4a2c-b1ca-903c71a4ec5b" />
+
 
 Proiektu honetan, **HC-05 Bluetooth modulua** erabiliz, gure Arduino Mega mundu birtualarekin (ordenagailu edo mugikor batekin) komunikatuko dugu, kablerik gabe!
 
