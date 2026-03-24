@@ -26,6 +26,9 @@ Emaitza perfektua da HC-05-aren RX pinerako!
 3. Nodo horretatik kable bat HC-05-aren RX pinera doa.
 4. Nodo horretatik bertatik, $R_2$ (2kΩ) erresistentzia bat ateratzen da GND-ra (lurrera).
 
+<img width="418" height="387" alt="image" src="https://github.com/user-attachments/assets/e334ccf0-a4f3-4eb0-8b9c-30414d62a997" />
+
+
 ## 3. Nola konektatu Ordenagailua Bluetooth bidez
 1. Piztu Arduinoa (eta Bluetooth modulua parpadetzen hasiko da).
 2. Joan Windows-eko Bluetooth ezarpenetara, bilatu **HC-05** eta emparejatu (PIN: `1234` oro `0000`).
