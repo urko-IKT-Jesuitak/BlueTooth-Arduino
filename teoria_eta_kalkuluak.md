@@ -1,0 +1,34 @@
+# ⚡ Teoria: Tentsio-Dibisorea eta PC Konexioa
+
+<p align="center">
+  <img src="https://image.api.playstation.com/vulcan/ap/rnd/202107/0216/vFk4M0r7o7r2vGj4vGj4M0r7o7r2vGj4vGj4.png?w=1920&h=480" alt="Tentsio-Dibisorea eta Kalkuluak - Cyberpunk Header" width="100%">
+</p>
+
+## 1. Zergatik behar dugu Tentsio-Dibisore bat?
+HC-05 moduluak Arduinoren 5V-ko elikadura jaso dezake VCC pinean. Barna, kontuz! Bere datu-sarrera (**RX pina**) **3.3V-ko logikarekin** lan egiteko diseinatuta dago. 
+Arduinoren TX pinak (gure kasuan 11. pinak) 5V bidaltzen ditu. Zuzenean konektatzen badugu, HC-05 modulua erre dezakegu. Hori ekiditeko, **tentsio-dibisore** bat egingo dugu bi erresistentziarekin.
+
+
+
+## 2. Kalkulua (Ohm-en Legearen aplikazioa)
+Gure helburua 5V-ko seinalea ~3.3V-ra jaistea da. Tentsio-dibisorearen formula hau da:
+$$V_{out} = V_{in} \cdot \frac{R_2}{R_1 + R_2}$$
+
+* $R_1$ = 1 k$\Omega$
+* $R_2$ = 2 k$\Omega$
+* $V_{in}$ = 5V
+
+$$V_{out} = 5V \cdot \frac{2000\Omega}{1000\Omega + 2000\Omega} = 5V \cdot \frac{2}{3} = 3.33V$$
+Emaitza perfektua da HC-05-aren RX pinerako!
+
+**Hardware kokapena:**
+1. Arduinoren TX (11. pina) $\rightarrow$ $R_1$ (1k$\Omega$) erresistentziara.
+2. $R_1$-ren irteera **nodo** batera doa.
+3. Nodo horretatik kable bat HC-05-aren RX pinera doa.
+4. Nodo horretatik bertatik, $R_2$ (2k$\Omega$) erresistentzia bat ateratzen da GND-ra (lurrera).
+
+## 3. Nola konektatu Ordenagailua Bluetooth bidez
+1. Piztu Arduinoa (eta Bluetooth modulua parpadetzen hasiko da).
+2. Joan Windows-eko Bluetooth ezarpenetara, bilatu **HC-05** eta emparejatu (PIN: `1234` oro `0000`).
+3. Ireki Windows-eko "Administrador de Dispositivos", joan "Puertos (COM y LPT)" atalera eta bilatu Bluetooth-ak sortu dituen **COM portuak** (adibidez COM5 eta COM6).
+4. Ireki **Tera Term**, hautatu konexio seriala eta aukeratu COM portu horietako bat (sarrerakoa) 9600 baud-eko abiaduran.
