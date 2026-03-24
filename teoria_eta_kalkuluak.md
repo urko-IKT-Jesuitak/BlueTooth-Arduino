@@ -1,8 +1,7 @@
 # ⚡ Teoria: Tentsio-Dibisorea eta PC Konexioa
 
-<p align="center">
-  <img src="https://image.api.playstation.com/vulcan/ap/rnd/202107/0216/vFk4M0r7o7r2vGj4vGj4M0r7o7r2vGj4vGj4.png?w=1920&h=480" alt="Tentsio-Dibisorea eta Kalkuluak - Cyberpunk Header" width="100%">
-</p>
+<img width="1376" height="768" alt="image" src="https://github.com/user-attachments/assets/25b28734-f1ba-439d-a540-6d4617637d8d" />
+
 
 ## 1. Zergatik behar dugu Tentsio-Dibisore bat?
 HC-05 moduluak Arduinoren 5V-ko elikadura jaso dezake VCC pinean. Barna, kontuz! Bere datu-sarrera (**RX pina**) **3.3V-ko logikarekin** lan egiteko diseinatuta dago. 
