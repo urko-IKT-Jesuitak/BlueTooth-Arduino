@@ -31,6 +31,6 @@ Emaitza perfektua da HC-05-aren RX pinerako!
 
 ## 3. Nola konektatu Ordenagailua Bluetooth bidez
 1. Piztu Arduinoa (eta Bluetooth modulua parpadetzen hasiko da).
-2. Joan Windows-eko Bluetooth ezarpenetara, bilatu **HC-05** eta emparejatu (PIN: `1234` oro `0000`).
+2. Joan Windows-eko Bluetooth ezarpenetara, bilatu **HC-05** eta emparejatu (PIN: `1234` edo `0000`).
 3. Ireki Windows-eko "Administrador de Dispositivos", joan "Puertos (COM y LPT)" atalera eta bilatu Bluetooth-ak sortu dituen **COM portuak** (adibidez COM5 eta COM6).
 4. Ireki **Tera Term**, hautatu konexio seriala eta aukeratu COM portu horietako bat (sarrerakoa) 9600 baud-eko abiaduran.
