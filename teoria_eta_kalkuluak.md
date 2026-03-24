@@ -13,18 +13,18 @@ Arduinoren TX pinak (gure kasuan 11. pinak) 5V bidaltzen ditu. Zuzenean konektat
 Gure helburua 5V-ko seinalea ~3.3V-ra jaistea da. Tentsio-dibisorearen formula hau da:
 $$V_{out} = V_{in} \cdot \frac{R_2}{R_1 + R_2}$$
 
-* $R_1$ = 1 k$\Omega$
-* $R_2$ = 2 k$\Omega$
+* $R_1$ = 1 kΩ
+* $R_2$ = 2 kΩ
 * $V_{in}$ = 5V
 
 $$V_{out} = 5V \cdot \frac{2000\Omega}{1000\Omega + 2000\Omega} = 5V \cdot \frac{2}{3} = 3.33V$$
 Emaitza perfektua da HC-05-aren RX pinerako!
 
 **Hardware kokapena:**
-1. Arduinoren TX (11. pina) $\rightarrow$ $R_1$ (1k$\Omega$) erresistentziara.
+1. Arduinoren TX (11. pina) $\rightarrow$ $R_1$ (1kΩ) erresistentziara.
 2. $R_1$-ren irteera **nodo** batera doa.
 3. Nodo horretatik kable bat HC-05-aren RX pinera doa.
-4. Nodo horretatik bertatik, $R_2$ (2k$\Omega$) erresistentzia bat ateratzen da GND-ra (lurrera).
+4. Nodo horretatik bertatik, $R_2$ (2kΩ) erresistentzia bat ateratzen da GND-ra (lurrera).
 
 ## 3. Nola konektatu Ordenagailua Bluetooth bidez
 1. Piztu Arduinoa (eta Bluetooth modulua parpadetzen hasiko da).
